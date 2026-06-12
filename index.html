@@ -1,126 +1,130 @@
-<div class="grid">
+<!DOCTYPE html>
+<html lang="en">
 
-```
-<div class="card">
-    <h2>🚨 Dataset Overview</h2>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <p><strong>Total Objects Analysed:</strong> 90,836</p>
-    <p><strong>Potentially Hazardous:</strong> 8,840</p>
-    <p><strong>Hazardous Percentage:</strong> 9.73%</p>
-    <p><strong>Machine Learning Accuracy:</strong> 91.93%</p>
-    <p><strong>Model:</strong> Random Forest Classifier</p>
-</div>
+    <title>Near-Earth Asteroid Risk Analysis</title>
 
-<div class="card">
-    <h2>📊 Hazard Statistics</h2>
+    <link rel="stylesheet" href="style.css">
+</head>
 
-    <p>✔️ 81,996 Non-Hazardous Objects</p>
-    <p>⚠️ 8,840 Hazardous Objects</p>
-    <p>📈 Hazard Rate: 9.73%</p>
-    <p>🤖 Classification Accuracy: 91.93%</p>
-</div>
+<body>
 
-<div class="card">
-    <h2>📈 Asteroid Size Distribution</h2>
-    <img src="images/size_distribution.png" alt="Size Distribution">
-</div>
+    <div class="topbar">
+        🚨 NEAR-EARTH ASTEROID RISK ANALYSIS & AI
+    </div>
 
-<div class="card">
-    <h2>🚀 Relative Velocity Distribution</h2>
-    <img src="images/velocity_distribution.png" alt="Velocity Distribution">
-</div>
+    <div class="grid">
 
-<div class="card">
-    <h2>⚠️ Risk Score Distribution</h2>
-    <img src="images/risk_distribution.png" alt="Risk Distribution">
-</div>
+        <div class="card">
+            <h2>🚨 Dataset Overview</h2>
 
-<div class="card">
-    <h2>🤖 Feature Importance Analysis</h2>
-    <img src="images/feature_importance.png" alt="Feature Importance">
+            <p><strong>Total Objects Analysed:</strong> 90,836</p>
+            <p><strong>Potentially Hazardous:</strong> 8,840</p>
+            <p><strong>Hazardous Percentage:</strong> 9.73%</p>
+            <p><strong>Machine Learning Accuracy:</strong> 91.93%</p>
+            <p><strong>Model:</strong> Random Forest Classifier</p>
+        </div>
 
-    <p><strong>Most Important Predictor:</strong> Miss Distance</p>
-</div>
+        <div class="card">
+            <h2>📊 Hazard Statistics</h2>
 
-<div class="card">
-    <h2>🎯 Model Performance</h2>
-    <img src="images/confusion_matrix.png" alt="Confusion Matrix">
+            <p>✔️ 81,996 Non-Hazardous Objects</p>
+            <p>⚠️ 8,840 Hazardous Objects</p>
+            <p>📈 Hazard Rate: 9.73%</p>
+            <p>🤖 Classification Accuracy: 91.93%</p>
+        </div>
 
-    <p>Random Forest Accuracy: 91.93%</p>
-</div>
+        <div class="card">
+            <h2>📈 Asteroid Size Distribution</h2>
+            <img src="images/size_distribution.png" alt="Size Distribution">
+        </div>
 
-<div class="card">
-    <h2>📋 Key Hazard Predictors</h2>
+        <div class="card">
+            <h2>🚀 Relative Velocity Distribution</h2>
+            <img src="images/velocity_distribution.png" alt="Velocity Distribution">
+        </div>
 
-    <p>🥇 Miss Distance — 30.28%</p>
-    <p>🥈 Relative Velocity — 26.50%</p>
-    <p>🥉 Diameter — 22.32%</p>
-    <p>📏 Absolute Magnitude — 20.90%</p>
-</div>
+        <div class="card">
+            <h2>⚠️ Risk Score Distribution</h2>
+            <img src="images/risk_distribution.png" alt="Risk Distribution">
+        </div>
 
-<div class="card wide">
-    <h2>☄️ Highest-Risk Asteroids Identified</h2>
+        <div class="card">
+            <h2>🤖 Feature Importance Analysis</h2>
+            <img src="images/feature_importance.png" alt="Feature Importance">
 
-    <p>• (2019 OK)</p>
-    <p>• (2015 TB145)</p>
-    <p>• 23187 (2000 PN9)</p>
-    <p>• (2002 NY40)</p>
-    <p>• 4179 Toutatis</p>
+            <p><strong>Most Important Predictor:</strong> Miss Distance</p>
+        </div>
 
-    <p>
-    These objects ranked highest using the custom risk metric
-    combining diameter, velocity, and miss distance.
-    </p>
-</div>
+        <div class="card">
+            <h2>🎯 Model Performance</h2>
+            <img src="images/confusion_matrix.png" alt="Confusion Matrix">
 
-<div class="card wide">
-    <h2>🧠 Scientific Conclusion</h2>
+            <p>Random Forest Accuracy: 91.93%</p>
+        </div>
 
-    <p>
-    This project analyzed 90,836 Near-Earth Objects (NEOs)
-    using statistical analysis and machine learning techniques.
-    A total of 8,840 objects (9.73%) were classified as
-    potentially hazardous.
-    </p>
+        <div class="card">
+            <h2>📋 Key Hazard Predictors</h2>
 
-    <p>
-    A custom asteroid risk score was developed using asteroid
-    diameter, relative velocity, and miss distance to rank
-    potential threats.
-    </p>
+            <p>🥇 Miss Distance — 30.28%</p>
+            <p>🥈 Relative Velocity — 26.50%</p>
+            <p>🥉 Diameter — 22.32%</p>
+            <p>📏 Absolute Magnitude — 20.90%</p>
+        </div>
 
-    <p>
-    A Random Forest machine learning classifier achieved
-    91.93% accuracy in hazard prediction.
-    </p>
+        <div class="card wide">
+            <h2>☄️ Highest-Risk Asteroids Identified</h2>
 
-    <p>
-    Feature importance analysis revealed that miss distance
-    (30.28%) was the strongest hazard predictor, followed by
-    relative velocity (26.50%), diameter (22.32%), and
-    absolute magnitude (20.90%).
-    </p>
+            <p>• (2019 OK)</p>
+            <p>• (2015 TB145)</p>
+            <p>• 23187 (2000 PN9)</p>
+            <p>• (2002 NY40)</p>
+            <p>• 4179 Toutatis</p>
 
-    <p>
-    The results demonstrate how machine learning can assist
-    planetary defense efforts by automatically identifying
-    potentially hazardous asteroids from large astronomical
-    datasets.
-    </p>
-</div>
+            <p>
+                These objects ranked highest using the custom risk metric
+                combining diameter, velocity, and miss distance.
+            </p>
+        </div>
 
-<div class="card wide">
-    <h2>🚀 Future Work</h2>
+        <div class="card wide">
+            <h2>🧠 Scientific Conclusion</h2>
 
-    <ul>
-        <li>Develop real-time asteroid risk monitoring</li>
-        <li>Integrate live NASA NEO API data</li>
-        <li>Predict future close-approach events</li>
-        <li>Train deep learning hazard classifiers</li>
-        <li>Create interactive 3D orbit visualizations</li>
-        <li>Build a planetary defense alert system</li>
-    </ul>
-</div>
-```
+            <p>
+                This project analyzed 90,836 Near-Earth Objects (NEOs)
+                using statistical analysis and machine learning techniques.
+                A total of 8,840 objects (9.73%) were classified as
+                potentially hazardous.
+            </p>
 
-</div>
+            <p>
+                A Random Forest machine learning classifier achieved
+                91.93% accuracy in hazard prediction.
+            </p>
+
+            <p>
+                Feature importance analysis revealed that miss distance
+                (30.28%) was the strongest hazard predictor.
+            </p>
+        </div>
+
+        <div class="card wide">
+            <h2>🚀 Future Work</h2>
+
+            <ul>
+                <li>Develop real-time asteroid risk monitoring</li>
+                <li>Integrate live NASA NEO API data</li>
+                <li>Predict future close-approach events</li>
+                <li>Train deep learning hazard classifiers</li>
+                <li>Create interactive 3D orbit visualizations</li>
+                <li>Build a planetary defense alert system</li>
+            </ul>
+        </div>
+
+    </div>
+
+</body>
+</html>
