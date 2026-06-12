@@ -1,0 +1,136 @@
+/* =========================
+   🚨 GLOBAL
+========================= */
+
+body {
+    margin: 0;
+    font-family: "Segoe UI", sans-serif;
+    background: #0a0a0a;
+    color: #ffffff;
+}
+
+/* =========================
+   🚨 HEADER
+========================= */
+
+.topbar {
+    text-align: center;
+    padding: 25px;
+    font-size: 30px;
+    font-weight: bold;
+    letter-spacing: 3px;
+
+    background: linear-gradient(
+        90deg,
+        #8b0000,
+        #ff4500
+    );
+
+    color: white;
+
+    box-shadow:
+        0 0 25px rgba(255,69,0,0.6);
+}
+
+/* =========================
+   📊 GRID
+========================= */
+
+.grid {
+    display: grid;
+    grid-template-columns:
+        repeat(auto-fit, minmax(350px, 1fr));
+
+    gap: 25px;
+    padding: 30px;
+}
+
+/* =========================
+   📦 CARDS
+========================= */
+
+.card {
+
+    background: #141414;
+
+    border-left: 5px solid #ff4500;
+
+    border-radius: 12px;
+
+    padding: 20px;
+
+    transition: 0.3s;
+}
+
+.card:hover {
+
+    transform: scale(1.02);
+
+    box-shadow:
+        0 0 20px rgba(255,69,0,0.4);
+}
+
+/* =========================
+   📝 TITLES
+========================= */
+
+.card h2 {
+
+    margin-top: 0;
+
+    color: #ff7f50;
+
+    border-bottom:
+        1px solid rgba(255,127,80,0.3);
+
+    padding-bottom: 10px;
+}
+
+/* =========================
+   🖼 IMAGES
+========================= */
+
+.card img {
+
+    width: 100%;
+
+    margin-top: 10px;
+
+    border-radius: 10px;
+
+    border: 2px solid #333;
+}
+
+/* =========================
+   🚨 DATA CARD
+========================= */
+
+.card p {
+
+    line-height: 1.6;
+}
+
+/* =========================
+   🧠 CONCLUSION
+========================= */
+
+.wide {
+
+    grid-column: span 2;
+}
+
+/* =========================
+   📱 MOBILE
+========================= */
+
+@media(max-width:900px){
+
+    .wide{
+        grid-column: span 1;
+    }
+
+    .topbar{
+        font-size:22px;
+    }
+
+}
